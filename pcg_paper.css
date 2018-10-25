@@ -12,16 +12,88 @@
    Filename:         pcg_paper.css
    Supporting Files: 
  */
+html {
+    background-image: url('');
+    background-size: 100%;
+    background-position: fixed;
+
+}
 
 body {
+    background-color: rgba(35, 112, 0, 0.863);
     height: 100%;
     margin: 0 auto 0 auto;
     min-width: 640px;
-    max-width: 960px;
+    max-width: 1000px;
     width: 90%;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 20% 80%;
 }
 
-header img {
-    margin: 0 auto 0 auto;
-    width: 70%;
+#logo {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    float: right;
+}
+
+nav#firstNav {
+    float: left;
+    line-height: 2em;
+    position: sticky;
+    display: block;
+    top: 0;
+    padding: 20px;
+    border-right: 2em solid white;
+}
+
+#firstNav a {
+    display: block;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    float: right;
+}
+
+/* links */
+a:active:visited {
+    color: rgb(141, 37, 37);
+}
+
+a:hover {
+    color: rgb(255, 196, 124);
+    background-color: rgb(141, 37, 37);
+}
+
+a:link {
+    color: rgb(255, 196, 124);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    display: table;
+    clear: both;
+    content: "";
+
+}
+
+footer section nav {
+    display: grid;
+    grid-template-rows: 10% 90%;
+    grid-template-columns: 50% 50%;
+}
+
+footer section h1 {
+    margin-left: 3em;
+
 }
