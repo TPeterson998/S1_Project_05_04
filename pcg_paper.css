@@ -11,16 +11,21 @@
 
    Filename:         pcg_paper.css
    Supporting Files: 
- */
+  */
+/* this set up my background image*/
 html {
     background-image: url('');
     background-size: 100%;
     background-position: fixed;
-
+    background-image: url('green-1072828.jpg');
+    background-size: 200%;
+    background-position: fixed;
+    font-family: 'Courier New', Courier, monospace;
 }
 
+/* This set up the background color and the sizeing of the body */
 body {
-    background-color: rgba(35, 112, 0, 0.863);
+    background-color: rgba(35, 112, 0, 0.897);
     height: 100%;
     margin: 0 auto 0 auto;
     min-width: 640px;
@@ -31,6 +36,7 @@ body {
     grid-template-columns: 20% 80%;
 }
 
+/* Ths set up the size and placing of the image at the top */
 #logo {
     margin-left: auto;
     margin-right: auto;
@@ -38,32 +44,45 @@ body {
     float: right;
 }
 
+/* This set up my nav on the side and its sapcing and how to separate it from the main body */
 nav#firstNav {
     float: left;
-    line-height: 2em;
-    position: sticky;
+    line-height: 4em;
+    position: relative;
     display: block;
-    top: 0;
-    padding: 20px;
-    border-right: 2em solid white;
+    top: 0px;
+    margin-left: 1.1em;
+    border-right: 2em solid transparent;
+    border-image: url('green-1072828.jpg') 100 stretch;
+    left: 0;
+    grid-template-rows: 10% 90%;
 }
 
+/* this set up the links of the nav */
 #firstNav a {
     display: block;
     width: 100%;
 }
 
-ul {
+/* This took away the bullets for the list of links */
+section p ul {
     list-style-type: none;
 }
 
+/* this set up the img in the text */
 img {
     float: right;
 }
 
-/* links */
-a:active:visited {
-    color: rgb(141, 37, 37);
+/* links. This sets up all of the links in the entire site and all the colors that they are for all there states */
+a:active,
+a:visited {
+    color: rgb(116, 24, 24);
+}
+
+footer a:active,
+footer a:visited {
+    color: rgb(35, 112, 0);
 }
 
 a:hover {
@@ -79,12 +98,10 @@ a {
     text-decoration: none;
 }
 
-/* Footer */
+/* Footer. This sets up the footer color, height, and width and alignment and the grid of the footer*/
 footer {
-    display: table;
-    clear: both;
-    content: "";
-
+    height: 100%;
+    background-color: rgb(100, 45, 9);
 }
 
 footer section nav {
@@ -93,7 +110,26 @@ footer section nav {
     grid-template-columns: 50% 50%;
 }
 
-footer section h1 {
-    margin-left: 3em;
 
+
+footer p {
+    text-align: center;
+    font-size: .9em;
+}
+
+/* This sets up all the article indenting and spacing */
+section article {
+    margin: 0em 1.5em 0em 1.5em;
+}
+
+article {
+    text-indent: 2em;
+}
+
+#warning {
+    text-indent: 0em;
+}
+
+h1 {
+    text-align: center;
 }
